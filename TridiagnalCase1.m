@@ -2,7 +2,7 @@
 clear all;
 clc;
 
-N = 10;
+N = 40;
 k = 10;
 Uo = 1;
 UatL = 0;
@@ -25,4 +25,5 @@ for j=1:N
 end
 
 a_trimmed = a(1:N,1:N);
-U = a_trimmed\f
+U = a_trimmed\f;
+U = U'
